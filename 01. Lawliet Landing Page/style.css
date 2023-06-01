@@ -1,0 +1,46 @@
+
+.menu-toggle-btn {
+    display: none !important;
+}
+
+
+.li-style {
+   
+}
+
+.li-style:hover {
+    
+}
+
+@media screen and (max-width:700px) {
+    .menu-toggle-btn {
+        display: block !important;
+    }
+
+    .li-style {
+        background-color: #193E6C;
+        padding: 10px 0;
+        color: #fff;
+        border: 1px solid #000;
+        text-transform: uppercase;
+        width: 100%;
+    }
+    
+    .li-style:hover {
+        background-color: #E7F6FF;
+        color: #000;
+        border: 1px solid #000;
+        font-weight: 700;
+    }
+
+    .site-nav {
+        display: none;
+        clip-path: circle(0% at 100% 0%);
+        transition: all .8s;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+}
+}
