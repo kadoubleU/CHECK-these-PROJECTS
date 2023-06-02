@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <div class="hero-container">
+        <div class="hero-nav-container">
             <nav class="flex flex-col lg:flex-row lg:justify-between">
                 <div class="nav px-[20px] md:px-[165px] py-[32px] flex justify-between items-center">
                     <div class="logo-column">
@@ -25,19 +25,48 @@
                         <li class="li-style">Testimortals</li>
                         <li class="li-style">About</li>
                         <li class="li-style">Terms</li>
-                        <li><i class="li-style fa-solid fa-magnifying-glass"></i></li>
+                        <li><i class="li-style search-btn fa-solid fa-magnifying-glass"></i></li>
+                        <form class="example"">
+                            <input type="text" placeholder="Search.." name="search">
+                            <button type="submit"><i class="fa fa-search "></i></button>
+                        </form>
                     </ul>
                 </div>
                 <div class="site-nav flex-col lg:flex-row text-center gap-[10px] md:px-[165px] lg:py-[32px]">
-                    <ul class="flex flex-col lg:flex-row lg:gap-[10px]">
-                        <li class="li-style">Contact</li>
-                        <li class="li-style">Testimortals</li>
-                        <li class="li-style">About</li>
-                        <li class="li-style">Terms</li>
-                        <li><i class="li-style fa-solid fa-magnifying-glass"></i></li>
-                    </ul>
+                    <div class="menu flex flex-row">
+                        <ul class="flex flex-col lg:flex-row lg:gap-[56px]">
+                            <li class="li-style uppercase"><a href="#" class="hover:text-[#094B72]"> Contact</a></li>
+                            <li class="li-style uppercase"><a href="#" class="hover:text-[#094B72]">Testimortals</a></li>
+                            <li class="li-style uppercase"><a href="#" class="hover:text-[#094B72]">About</a></li>
+                            <li class="li-style uppercase"><a href="#" class="hover:text-[#094B72]">Terms</a></li>
+                        </ul>
+                        <ul>
+                            <li><i class="pl-[100px] li-style search-btn fa-solid fa-magnifying-glass cursor-pointer"></i></li>
+                        </ul>
+                    </div>
+                    
+                    <form class="example flex flex-row items-center bg-[#094B72]">
+                        <input type="text" placeholder="Search.." name="search" class="bg-[#094B72] text-white p-[10px] mt-[10px] w-[450px]"> <br>
+                         <button type="submit"><i class="fa fa-search bg-[#094B72] text-white"></i></button>
+                    </form>
                 </div>
             </nav>
+        </div>
+
+        <div class="hero-content-container flex flex-col lg:flex-row md:px-[155px] pt-[30px] lg:pt-[135px] relative">
+            <div class="left-column">
+                <div class="row-1">
+                    <div class="small-text-container bg-[#E7F6FF] flex flex-row gap-[9px] items-center max-w-[500px] pl-[6px] pr-[21px] rounded-3xl">
+                        <span class="bg-[#094B72] text-white w-[86px] h-[28px] rounded-3xl flex justify-center items-center my-[6px]">New</span>
+                        <p>Stay connected to the upcoming & Recent jobs</p>
+                    </div>
+                </div>
+                <div class="row-2"></div>
+            </div>
+
+            <div class="right-column lg:absolute lg:top-0 lg:right-0">
+                <img src="images/hero-image.png" alt="">
+            </div>
         </div>
     </header>
 
@@ -51,6 +80,18 @@
        $(".menu-toggle-btn").click(function() {
            $(this).toggleClass("fa-times");
            $(".mobile-nav").toggle("active");
+       });
+   </script>
+
+   <!-- SearchBar -->
+   <script>
+     $(document).ready(function() {
+           $(".example").css("display", "none");
+       })
+        
+        $(".search-btn").click(function() {
+           $(this).toggleClass("fa-times");
+           $(".example").toggle("active");
        });
    </script>
 </body>

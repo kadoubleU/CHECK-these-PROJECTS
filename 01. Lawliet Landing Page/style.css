@@ -1,18 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --poppins-font: 'Poppins', sans-serif;
+    --jakarta-sans-font: 'Plus Jakarta Sans', sans-serif;
+  }
+
+* {
+    font-family: var(--poppins-font);
+  }
 
 .menu-toggle-btn {
     display: none !important;
 }
 
-
-.li-style {
-   
+.small-text-container {
+    font-family: var(--jakarta-sans-font);
 }
 
-.li-style:hover {
-    
-}
-
-@media screen and (max-width:700px) {
+@media screen and (max-width:900px) {
     .menu-toggle-btn {
         display: block !important;
     }
@@ -24,6 +31,8 @@
         border: 1px solid #000;
         text-transform: uppercase;
         width: 100%;
+        cursor: pointer;
+        font-size: 12px;
     }
     
     .li-style:hover {
