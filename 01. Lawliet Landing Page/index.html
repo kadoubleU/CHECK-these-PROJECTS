@@ -13,11 +13,11 @@
     <header>
         <div class="hero-nav-container">
             <nav class="flex flex-col lg:flex-row lg:justify-between">
-                <div class="nav px-[20px] md:px-[165px] py-[32px] flex justify-between items-center">
+                <div class="nav px-[20px] lg:px-[165px] py-[32px] flex justify-between items-center">
                     <div class="logo-column">
                         <a href="index.html"><img src="images/logo.png" alt=""></a>
                     </div>
-                    <i class="menu-toggle-btn fas fa-bars"></i>
+                    <i class="menu-toggle-btn fas fa-bars cursor-pointer"></i>
                 </div>
                 <div class="mobile-nav flex-col lg:flex-row text-center gap-[10px] md:px-[165px] lg:py-[32px]">
                     <ul class="flex flex-col lg:flex-row lg:gap-[10px]">
@@ -32,7 +32,7 @@
                         </form>
                     </ul>
                 </div>
-                <div class="site-nav flex-col lg:flex-row text-center gap-[10px] md:px-[165px] lg:py-[32px]">
+                <div class="site-nav flex-col lg:flex-row text-center gap-[10px] lg:px-[165px] lg:py-[32px]">
                     <div class="menu flex flex-row">
                         <ul class="flex flex-col lg:flex-row lg:gap-[56px]">
                             <li class="li-style uppercase"><a href="#" class="hover:text-[#094B72]"> Contact</a></li>
@@ -53,22 +53,103 @@
             </nav>
         </div>
 
-        <div class="hero-content-container flex flex-col lg:flex-row md:px-[155px] pt-[30px] lg:pt-[135px] relative">
+        <div class="hero-content-container flex flex-col lg:flex-row px-[20px] lg:px-[155px] pt-[30px] lg:pt-[135px] relative items-center lg:h-[1024px]">
             <div class="left-column">
-                <div class="row-1">
+                <div class="row-1 mb-[115px]">
                     <div class="small-text-container bg-[#E7F6FF] flex flex-row gap-[9px] items-center max-w-[500px] pl-[6px] pr-[21px] rounded-3xl">
                         <span class="bg-[#094B72] text-white w-[86px] h-[28px] rounded-3xl flex justify-center items-center my-[6px]">New</span>
                         <p>Stay connected to the upcoming & Recent jobs</p>
                     </div>
+                    <div class="other-content flex flex-col mt-[16px] gap-[42px]">
+                        <h1 class="font-style-h1 text-[35px] lg:text-[90px] font-bold text-[#094B72] z-10 max-w-[720px] leading-9  lg:leading-[90px]">Your Solution Legal Consultacy</h1>
+
+                        <p class="small-text-container text-2xl max-w-[590px]">We are here to help you take care of your legality with the best service especially for you.</p>
+                        <button class="rounded-[8px] uppercase bg-[#094B72] w-[190px] h-[80px] text-gray-200 hover:bg-[#E7F6FF] hover:text-[#094B72] hover:border-[3px] hover:border-[#094B72]">Get started</button>
+                    </div>
                 </div>
-                <div class="row-2"></div>
+                <div class="row-2">
+                    <div class="logos-description">
+                        <p class="small-text-container text-gray-500 text-[22px]">Trusted by 10+ companies in indonesia</p>
+                    </div>
+                    <div class="logos-container flex flex-col mt-[33px] mb-[46px] gap-[20px] justify-between max-w-[200px]">
+                        <div class="logos-row1 flex flex-row gap-[65px] justify-between">
+                            <img class="" src="images/Airbnb Logo.png" alt="Airbnb Logo">
+                            <img class="w-[80px] h-[23px]" src="images/Hubspot Logo.png" alt="Hubspot Logo">
+                        </div>
+                        <div class="logos-row2 flex flex-row gap-[30px] justify-between">
+                            <img class="" src="images/Microsoft Logo.png" alt="">
+                            <img class="" src="images/Google Logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="right-column lg:absolute lg:top-0 lg:right-0">
-                <img src="images/hero-image.png" alt="">
+            <div class="right-column lg:absolute lg:top-0 lg:right-0 relative flex flex-col items-center">
+                <img src="images/hero-image.png" alt="" class="z-0">
+                <div class="person-box bg-white text-center min-w-[344px] rounded-xl shadow-2xl shadow-gray-300 absolute bottom-[-70px] h-[114px] flex flex-col items-center justify-center">
+                    <p class="text-[#33475B] font-bold text-2xl	small-text-container">Tiara Andini</p>
+                    <p class="small-text-container text-base font-medium text-[#87898C]">-Lawyer</p>
+                </div>
             </div>
         </div>
     </header>
+    <div class="page-content">
+        <section class="why-help">
+            <div class="why-help-section flex flex-col justify-between lg:flex-row px-[20px] lg:px-[155px] pb-[126px]">
+                <div class="col-1 max-w-[380px] pt-[174px]">
+                    <h2 class="font-style-h1 font-bold text-[30px] md:text-[40px] text-gray-700 pb-[30px]">Why do we help with legalization?</h2>
+                    <p class="poppins-font text-gray-500 text-xl max-w-[365px]">We are here for UMKM in Indonesia to carry out the legalization process, which is sometimes complicated.</p>
+                </div>
+
+                <div class="col-2 pt-[124px]">
+                    <div class="cards-container max-w-[545px] pt-[20px] flex flex-col gap-[30px]">
+                        <div class="cards-row flex flex-col md:flex-row gap-[30px]">
+                            <div class="card p-[24px] bg-white rounded-xl min-w-[210px] flex flex-col gap-[18px] shadow-2xl shadow-gray-300">
+                                <div>
+                                <img src="images/Circle Layer.png" alt="">
+                                </div>
+                                <h3 class="font-style-h1 text-[22px] text-[#363940] font-bold max-w-[100px]">Enviromental Law</h3>
+                                <p class="max-w-[210px] small-text-container text-gray-500 text-sm">Environmental legal issues might occur since the planned business activities are designed</p>
+                            </div>
+                            <div class="card p-[24px] bg-white rounded-xl min-w-[210px] flex flex-col gap-[18px] shadow-2xl shadow-gray-300">
+                                <div>
+                                <img src="images/Circle Layer.png" alt="">
+                                </div>
+                                <h3 class="font-style-h1 text-[22px] text-[#363940] font-bold max-w-[100px]">Enviromental Law</h3>
+                                <p class="max-w-[210px] small-text-container text-gray-500 text-sm">Environmental legal issues might occur since the planned business activities are designed</p>
+                            </div>
+                        </div>
+
+                        <div class="cards-row flex flex-col md:flex-row gap-[30px]">
+                            <div class="card p-[24px] bg-white rounded-xl min-w-[210px] flex flex-col gap-[18px] shadow-2xl shadow-gray-300">
+                                <div>
+                                <img src="images/Circle Layer.png" alt="">
+                                </div>
+                                <h3 class="font-style-h1 text-[22px] text-[#363940] font-bold max-w-[100px]">Enviromental Law</h3>
+                                <p class="max-w-[210px] small-text-container text-gray-500 text-sm">Environmental legal issues might occur since the planned business activities are designed</p>
+                            </div>
+                            <div class="card p-[24px] bg-white rounded-xl min-w-[210px] flex flex-col gap-[18px] shadow-2xl shadow-gray-300">
+                                <div>
+                                <img src="images/Circle Layer.png" alt="">
+                                </div>
+                                <h3 class="font-style-h1 text-[22px] text-[#363940] font-bold max-w-[100px]">Enviromental Law</h3>
+                                <p class="max-w-[210px] small-text-container text-gray-500 text-sm">Environmental legal issues might occur since the planned business activities are designed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="counts">
+            <div class="counts-section bg-[#094B72] pt-[53px] pb-[73px] px-[20px] lg:px-[155px]">
+                <div class="text-row">
+                    <h2 class="font-style-h1 text-white text-[48px] font-black leading-[50px] text-center pb-[12px]">Some count that matters</h2>
+                    <p class="poppins-font text-white text-center text-lg font-normal">Our achievement in the journey depicted in numbers</p>
+                </div>
+            </div>
+        </section>
+    </div>
 
     
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
