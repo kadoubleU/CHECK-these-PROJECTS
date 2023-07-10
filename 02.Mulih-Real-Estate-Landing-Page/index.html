@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mulih Real Estat Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="logo-column">
+                <img src="img/logo.png" alt="">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.0" stroke="#69B99D" class="w-6 h-6 mobile-nav-button" width="10%">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
+                  </svg>
+                  
+            </div>
+            <div class="menu-column-mobile">
+                <div class="nav-column">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Property</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-buttons-column">
+                    <button>Sign In</button>
+                    <button>Login</button>
+                </div>
+            </div>
+            <div class="menu-column">
+                <div class="nav-column">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Property</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="nav-buttons-column">
+                    <button>Sign In</button>
+                    <button>Login</button>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-section">
+
+        </div>
+    </header>
+
+
+<!-- JQUERY CODE -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function() {
+       $(".menu-column-mobile").css("display", "none");
+   })
+   $(".mobile-nav-button").click(function() {
+       $(this).toggleClass("fa-times");
+       $(".menu-column-mobile").slideToggle();
+   });
+</script>
+
+
+</body>
+</html>
