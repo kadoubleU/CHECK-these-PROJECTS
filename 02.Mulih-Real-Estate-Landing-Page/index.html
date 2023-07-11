@@ -20,7 +20,7 @@
             <div class="menu-column-mobile">
                 <div class="nav-column">
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Home </a></li>
                         <li><a href="#">Property</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Service</a></li>
@@ -28,14 +28,19 @@
                     </ul>
                 </div>
                 <div class="nav-buttons-column">
-                    <button>Sign In</button>
-                    <button>Login</button>
+                    <button class="sign-in-btn">Sign In</button>
+                    <button class="login-btn">Login</button>
                 </div>
             </div>
             <div class="menu-column">
                 <div class="nav-column">
                     <ul>
-                        <li><a href="#">Home</a></li>
+                        <li class="first-nav hover-li">
+                            <a href="#" class="f-el-a">Home</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="6" viewBox="0 0 6 6" fill="none" class="f-el-svg">
+                                <circle cx="3" cy="3" r="3" fill="#69B99D"/>
+                            </svg>
+                        </li>
                         <li><a href="#">Property</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Service</a></li>
@@ -43,16 +48,127 @@
                     </ul>
                 </div>
                 <div class="nav-buttons-column">
-                    <button>Sign In</button>
-                    <button>Login</button>
+                    <button class="sign-in-btn">Sign In</button>
+                    <button class="login-btn">Login</button>
                 </div>
             </div>
         </nav>
         <div class="hero-section">
+            <div class="content-column">
+                <div class="content-row">
+                    <p class="hero-category">Real estate</p>
+                    <h2 class="hero-h2">Let's hunt for your dream residence</h2>
+                    <p class="hero-p">Explore our range of beautiful properties with the addition of separate accommodation suitable for you.</p>
+                </div>
 
+                <div class="buy-rent-box">
+                    <div class="buy-rent-buttons">
+                        <div class="buy-btn">Buy</div>
+                        <div class="rent-btn">Rent</div>
+                    </div>
+                    <div class="buy-rent-dropdowns">
+                        <div class="buy-rent-col-1 buy-rent-col">
+                            <label for="buy-rent" class="loc">Location</label>
+                            <select name="buy-rent" id="buy-rent" class="dropdown">
+                            <option value="location">Bogor, Jawa Barat</option>
+                            </select>
+                        </div>
+                        <div class="buy-rent-col-2 buy-rent-col">
+                            <label for="type" class="type">Type</label>
+                            <select name="type" id="type" class="dropdown">
+                            <option value="type">Home</option>
+                            </select>
+                        </div>
+                        <div class="buy-rent-col-3 buy-rent-col">
+                            <label for="price" class="price">Price Range</label>
+                            <select name="price" id="price" class="dropdown">
+                            <option value="price">$200-$350</option>
+                            </select>
+                        </div>
+                        <div class="buy-rent-col-4">
+                            <button class="buy-rent-search">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-column">
+                <img src="img/house.png" alt="" width="100%">
+            </div>
         </div>
     </header>
 
+    <main>
+        <section class="recommendations">
+            <div class="recommendation-section">
+                <p class="rec-category">Discover</p>
+                <h2 class="heading">Best recomendation</h2>
+                <div class="recommendation-content">
+                    <p class="rec-p">Discover our exclusive selection of the finest one-of-a-kind luxury properties architectural masterpieces.</p>
+                    <button class="learn-more-btn">Learn more <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0001 12C22.0001 17.52 17.5101 22 12.0001 22L11.7204 21.9962C6.32954 21.8478 2.00012 17.4264 2.00012 12C2.00012 6.49 6.48012 2 12.0001 2C17.5101 2 22.0001 6.49 22.0001 12ZM10.0201 8C9.73012 8.3 9.73012 8.77 10.0301 9.06L12.9801 12L10.0301 14.94C9.73012 15.23 9.73012 15.71 10.0201 16C10.3201 16.3 10.7901 16.3 11.0801 16L14.5701 12.53C14.7101 12.39 14.7901 12.2 14.7901 12C14.7901 11.8 14.7101 11.61 14.5701 11.47L11.0801 8C10.9401 7.85 10.7501 7.78 10.5601 7.78C10.3601 7.78 10.1701 7.85 10.0201 8Z" fill="#69B99D"/>
+                      </svg></button>
+                </div>
+                <div class="recommendation-cards">
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="img/card-img-1.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-h3">Perum griya asri</h3>
+                            <p class="card-place">Bogor, Jawa Barat</p>
+                            <div class="card-price-container">
+                                <div class="card-price">
+                                    <p>$25,000</p>
+                                </div>
+                                <div class="card-living-area">
+                                    <p>360m<sup>2</sup> <span class="living-area-text">Living Area</span></p>
+                                </div>
+                            </div>
+                            <button class="card-btn">Send Inquiry</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="img/card-img-1.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-h3">Perum griya asri</h3>
+                            <p class="card-place">Bogor, Jawa Barat</p>
+                            <div class="card-price-container">
+                                <div class="card-price">
+                                    <p>$25,000</p>
+                                </div>
+                                <div class="card-living-area">
+                                    <p>360m<sup>2</sup> <span class="living-area-text">Living Area</span></p>
+                                </div>
+                            </div>
+                            <button class="card-btn">Send Inquiry</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img">
+                            <img src="img/card-img-1.png" alt="">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-h3">Perum griya asri</h3>
+                            <p class="card-place">Bogor, Jawa Barat</p>
+                            <div class="card-price-container">
+                                <div class="card-price">
+                                    <p>$25,000</p>
+                                </div>
+                                <div class="card-living-area">
+                                    <p>360m<sup>2</sup> <span class="living-area-text">Living Area</span></p>
+                                </div>
+                            </div>
+                            <button class="card-btn">Send Inquiry</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 <!-- JQUERY CODE -->
 <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
