@@ -25,6 +25,7 @@ header {
 
 .menu-column {
     display: flex;
+    align-items: center;
     gap: 80px;
 }
 
@@ -323,6 +324,13 @@ header {
     line-height: 26px;
     letter-spacing: 0.5px;
     margin-bottom: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.rec-category:hover {
+    background: #69B99D;
+    color: #fff;
 }
 
 .heading {
@@ -517,6 +525,61 @@ header {
     border: 1px solid #69B99D;
 }
 
+/* ADVANTAGES SECTION  */
+
+.advantages-section {
+    padding: 80px 124px;
+    background: #F5F5F5;
+    margin-bottom: 120px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.advantages-heading {
+    display: flex;
+    width: 436px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #054457;
+    font-family: Rubik;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 56px;
+    letter-spacing: 0.5px;
+    margin-bottom: 68px;
+}
+
+.column {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.column h3 {
+    color: #054457;
+    font-family: Poppins;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0.5px;
+}
+
+.column p {
+    color: #73788C;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+}
 
 
 /* MOBILE */
@@ -645,6 +708,20 @@ header {
     align-items: flex-start;
 }
 
+/* ADVANTAGES SECTION */
 
+.advantages-section {
+    padding: 80px 20px;
+    background: #F5F5F5;
+}
+
+.row {
+    flex-direction: column;
+}
+
+.advantages-heading {
+    width: 100%;
+    font-size: 38px;
+}
 
 }
