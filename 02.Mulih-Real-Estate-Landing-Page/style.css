@@ -499,7 +499,23 @@ header {
     color:#fff;
 }
 
+.card-btn-2 {
+    background: #69B99D;
+    box-shadow: 0px 0px 20px 0px rgba(105, 185, 157, 0.58);
+    color: #FEFEFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.04px;
+}
 
+.card-btn-2:hover {
+    background:#fff;
+    color: #69B99D;
+    border: 1px solid #69B99D;
+}
 
 
 
