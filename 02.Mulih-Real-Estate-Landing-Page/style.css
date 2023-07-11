@@ -393,7 +393,7 @@ header {
     border: 1px solid #DEDCDA;
     background: #FEFEFF;
     padding: 16px;
-    max-width: 376px;
+    width: 100%;
     /* height: 472px; */
     flex-shrink: 1;
 }
