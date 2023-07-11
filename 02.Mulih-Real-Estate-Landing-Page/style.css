@@ -343,12 +343,12 @@ header {
     letter-spacing: 0.5px;
 }
 
-.recommendation-content {
+/* .recommendation-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-}
+} */
 
 .rec-p {
     display: flex;
@@ -691,10 +691,10 @@ header {
     max-width: 100%;
 }
 
-.recommendation-cards {
+/* .recommendation-cards {
     flex-direction: column;
     justify-content: center;
-}
+} */
 
 .card {
     max-width: 100%;
@@ -715,13 +715,24 @@ header {
     background: #F5F5F5;
 }
 
-.row {
+/* .row {
     flex-direction: column;
-}
+} */
 
 .advantages-heading {
     width: 100%;
     font-size: 38px;
 }
 
+}
+
+@media (max-width: 412px) {
+    .recommendation-cards {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .row {
+        flex-direction: column;
+    }
 }
