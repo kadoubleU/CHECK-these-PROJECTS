@@ -299,6 +299,84 @@ nav {
     line-height: normal;
 }
 
+/* TRADE-STEPS SECTION */
+
+.trade-steps {
+    background:  #160E33;
+    padding-left: 165px;
+    padding-right: 165px;
+}
+
+.trade-steps header {
+    margin-bottom: 80px;
+}
+
+.section-h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.section-p {
+    color:  #FFF;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    opacity: 0.6000000238418579;
+}
+
+.trade-steps-section-content {
+    display: flex;
+    flex-direction: row;
+    gap: 121px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.video-col {
+    border-radius: 12px;
+    background: linear-gradient(0deg, rgba(239, 68, 59, 0.20) 0%, rgba(239, 68, 59, 0.20) 100%), url(img/video-bg.png), lightgray 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    width: 540px;  
+    height: 673px;
+}
+
+.video-btn-play-icon {
+    position: absolute;
+    top: 48.5%;
+    left: 48%;
+}
+
+.steps-col {
+    color: #EF443B;
+    font-family: Rubik;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+
+
+
+
 /* MOBILE VERSION */
 
 @media (max-width: 1200px) {
@@ -387,7 +465,95 @@ nav {
 }
 
 
+/* TRADE-STEPS SECTION */
 
+.trade-steps {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.section-h2 {
+    font-family: Rubik;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.section-p {
+    color:  #FFF;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 0.6000000238418579;
+}
+
+.trade-steps-section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 121px;
+}
+
+.video-col {
+    width: 100%;  
+    height: 673px;
+}
+
+}
+
+.step-box {
+    position: relative;
+    display: flex;
+    width: 284px;
+    padding: 12px;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+    border-radius: 80px;
+    background: var(--purple, #160E33);
+    box-shadow: 0px 0px 4px 0px rgba(239, 68, 59, 0.40);
+    justify-content: center;
+    cursor: pointer;
+}
+
+.step-box:hover {
+    background: rgba(239, 68, 59, 0.40);
+}
+
+.step-box-num {
+    position:absolute;
+    color:  #160E33;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    z-index: 3;
+    top: 0px;
+    right: 250px;
+    
+}
+
+.step-num-circle {
+    position:absolute;
+    bottom: 11px;
+    right: 253px;
+    z-index: 1;
+}
+
+.step-box-text {
+    color: #EF443B;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.step-box-text:hover {
+    color: #fff;
 }
 
 @media (max-width: 768px) {
