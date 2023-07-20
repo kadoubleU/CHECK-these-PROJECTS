@@ -6,7 +6,8 @@
     <title>Krypto Landing Page</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
 </head>
 <body>
     <header>
@@ -260,20 +261,88 @@
                   </svg>
             </div>
             <div class="steps-col">
-                <h3 class="steps-col">Steps to trade</h3>
+                <h3 class="steps-col-text">Steps to trade</h3>
                 <div class="steps-to-trade">
                   <div class="step-box" data-aos="fade-right">
                     <p class="step-box-num">01</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" class="step-num-circle" viewBox="0 0 42 42" fill="none">
-                      <circle cx="21" cy="21" r="21" fill="#EF443B"/>
-                    </svg>
                     <p class="step-box-text">Create an account</p>
+                  </div>
+
+                  <div class="step-box step-box-02" data-aos="fade-left">
+                    <p class="step-box-num">02</p>
+                    <p class="step-box-text">Download platfrom</p>
+                  </div>
+
+                  <div class="step-box" data-aos="fade-right">
+                    <p class="step-box-num">03</p>
+                    <p class="step-box-text">Select crypto</p>
+                  </div>
+
+                  <div class="step-box" data-aos="fade-left">
+                    <p class="step-box-num">04</p>
+                    <p class="step-box-text">Start trading</p>
                   </div>
                 </div>
             </div>
         </div>
+        <img data-aos="flip-right" data-aos-duration="1500" class="right-down-coin-2" src="img/etherium-3.png" alt="">
     </section>
 
+    <section class="available-cryptos">
+      <div class="available-cryptos-section">
+        <header>
+          <h2 class="section-h2">Available Creyptos</h2>
+          <p class="section-p">Tincidunt id nibh orci nibh justo. Purus et turpis nulla elementum, sed vel.</p>
+        </header>
+
+        <div class="creyptos-cols-container">
+          <div class="creypto-box creypto-box-1">
+            <div class="img-row">
+              <img class="img-row-image" src="img/img-col-1.png" alt="">
+            </div>
+            <div class="creypto-content">
+              <h3 class="creypto-heading">Bitcoin</h3>
+              <p class="creypto-p">Tincidunt id nibh orci nibh justo. Purus et turpis nulla elementum, sed vel.</p>
+
+              <div class="creypto-price-button-box">
+                <p class="creypto-price-p">$43.7k</p>
+                <button class="creypto-button">Trade now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="creypto-box creypto-box-2">
+            <div class="img-row">
+              <img class="img-row-image" src="img/img-col-1.png" alt="">
+            </div>
+            <div class="creypto-content">
+              <h3 class="creypto-heading">Bitcoin</h3>
+              <p class="creypto-p">Tincidunt id nibh orci nibh justo. Purus et turpis nulla elementum, sed vel.</p>
+
+              <div class="creypto-price-button-box">
+                <p class="creypto-price-p">$43.7k</p>
+                <button class="creypto-button">Trade now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="creypto-box creypto-box-3">
+            <div class="img-row">
+              <img class="img-row-image" src="img/img-col-1.png" alt="">
+            </div>
+            <div class="creypto-content">
+              <h3 class="creypto-heading">Bitcoin</h3>
+              <p class="creypto-p">Tincidunt id nibh orci nibh justo. Purus et turpis nulla elementum, sed vel.</p>
+
+              <div class="creypto-price-button-box">
+                <p class="creypto-price-p">$43.7k</p>
+                <button class="creypto-button">Trade now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
 <!-- NAVIGATION MENU JQUERY -->
@@ -294,7 +363,13 @@
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
-  </script>
+</script>
+
+<script>
+  ScrollReveal().reveal('.creypto-box-1', { delay: 500 });
+  ScrollReveal().reveal('.creypto-box-1', { delay: 1000 });
+  ScrollReveal().reveal('.creypto-box-3', { delay: 1500 });
+</script>
 
 </body>
 </html>
