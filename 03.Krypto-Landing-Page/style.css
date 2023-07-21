@@ -157,7 +157,7 @@ nav {
     gap: 9px;
     border-radius: 64px;
     opacity: 0.8;
-    background: var(--purple, #160E33);
+    background: #160E33;
     z-index: 0;
     flex-shrink: 1;
     width: 300px;
@@ -251,7 +251,7 @@ nav {
     border-radius: 40px;
     border: 2px solid  #EF443B;
     background: rgba(22, 14, 51, 0.50);
-    color: var(--white, #FFF);
+    color:  #FFF;
     font-family: Rubik;
     font-size: 16px;
     font-style: normal;
@@ -266,7 +266,7 @@ nav {
 }
 
 .hero-p2 {
-    color: var(--white, #FFF);
+    color:  #FFF;
     text-align: center;
     font-family: Rubik;
     font-size: 18px;
@@ -340,7 +340,7 @@ nav {
     display: flex;
     flex-direction: row;
     gap: 121px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
