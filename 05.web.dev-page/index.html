@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web.dev</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Header START -->
+    <header class="bg-[#F2F2F2] headerContain w-full max-w-full">
+
+        <!-- Hero Images START -->
+        <div class="figure-menu hidden lg:block">
+            <img src="images/ellipse-nav.png" alt="">
+        </div>
+
+        <div class="left-figure-hero hidden lg:block">
+            <img src="images/leftImgHero.png" alt="">
+        </div>
+
+        <div class="right-figure-hero hidden lg:block">
+            <img src="images/rightImgHero.png" alt="">
+        </div>
+        <!-- Hero Images END -->
+
+        <div class="header-container pt-[48px] px-[20px] lg:px-[135px] pb-[50px] lg:pb-[106px]">
+            <nav>
+                <div class="nav-container">
+                    <div class="navigation flex justify-between items-center">
+                        <div class="logo">
+                            <p class="p-logo text-[#313131] text-xl">Web.Dev</p>
+                        </div>
+                        <i class="menu-toggle-btn fas fa-bars"></i>
+                        <div class="menu text-[#313131]">
+                            <ul class="md:flex md:gap-[50px] md:items-center md:justify-center">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Testimonials</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Sign In</a></li>
+                                <li><a href="#"><button class="bg-[#49AD09] w-[152px] h-[58px] rounded-md shadow-2xl text-white">Sign Up</button></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero flex flex-col justify-center items-center mt-[106px] md:mt-[206px] md:px-[132px] gap-[36px]">
+                <div class="heading-hero">
+                    <h1 class="hero-h1 text-[50px] md:text-[80px] text-center leading-[60px] md:leading-[80px]">We Develop <br> <span class="heroH1 text-[#49AD09]">Shopify</span> sites</h1>
+                </div>
+
+                <div class="h-description">
+                    <p class="text-center max-w-sm mb-[30px]">Slingback fabric heels. Thin wraparound ankle strap. Squared heel and toe. Pointed toes. Padded insole with geometrical design. </p>
+                </div>
+
+                <div class="heading-buttons flex flex-col md:flex-row gap-[37px] items-center justify-center">
+                    <button class="bg-[#49AD09] w-[225px] h-[58px] rounded-md shadow-2xl text-white">Contact Us</button>
+                    <div class="watch-button flex flex-row justify-end items-center gap-2 text-center">
+                        <button class="watch-btn text-[#514040] underline text-md">Watch video</button>
+                        <i class="fa-solid fa-caret-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header END -->
+
+    <!-- Content Container START -->
+    <div class="content-container">
+        <div class="vector-image-left hidden lg:block">
+            <img src="images/vector-1.png" alt="">
+        </div>
+
+        <div class="vector-image-right hidden lg:block">
+            <img src="images/rightMiddleEllipse.png" alt="">
+        </div>
+
+        <!-- Section Logo and Specifications START -->
+        <section class="logo-and-spec px-[20px] lg:px-[135px]">
+            <div class="companies mt-[76px] mb-[150px] md:mb-[215px]">
+                <div class="logos flex flex-col md:flex-row justify-center items-center gap-[30px] md:gap-[130px]">
+                    <img class="max-w-fit" src="images/logos/chase.png" alt="">
+                    <img class="max-w-fit" src="images/logos/asana.png" alt="">
+                    <img class="max-w-fit" src="images/logos/google.png" alt="">
+                    <img class="max-w-fit" src="images/logos/buzzfeed.png" alt="">
+                    <img class="max-w-fit" src="images/logos/walmart.png" alt="">
+                </div>
+            </div>
+            <div class="specializations flex flex-col justify-center items-center">
+                <div class="descr-text flex flex-col justify-center items-center gap-[30px] text-center">
+                    <p>What we do?</p>
+                    <h2 class="specialization-heading text-[30px] md:text-[45px]">Our Specialization</h2>
+                </div>
+                <div class="cards">
+                    <div class="row-one flex flex-col md:flex-row mt-[80px] justify-center gap-[40px]">
+                        <div class="card-one bg-white border-2 rounded-md shadow-2xl px-[30px] max-w-sm flex flex-col justify-between gap-[30px]">
+                            <div class="card-heading flex flex-row mt-[43px] gap-[15px] items-center">
+                                <div class="logo"><img src="images/logos/wLogo.png" alt=""></div>
+                                <p class="service-title text-lg">Webflow Development</p>
+                            </div>
+                            <div>
+                                <p>Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now. In built table in an rapid blush. Merits behind on afraid or warmly.</p>
+                            </div>
+                            <div class="pb-[40px] text-[#49AD09] underline">
+                                <p>Read More</p>
+                            </div>
+                        </div>
+                        <div class="card-two border-2 rounded-md px-[30px] max-w-sm flex flex-col justify-between gap-[30px]">
+                            <div class="card-heading flex flex-row mt-[43px] gap-[15px] items-center">
+                                <div class="logo"><img src="images/logos/shopifyLogo.png" alt=""></div>
+                                <p class="service-title text-lg">Shopify Development</p>
+                            </div>
+                            <div>
+                                <p>Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now. In built table in an rapid blush. Merits behind on afraid or warmly.</p>
+                            </div>
+                            <div class="pb-[40px] underline">
+                                <p>Read More</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="two flex flex-col md:flex-row mt-[40px] justify-center gap-[40px]">
+                        <div class="card-one bg-white border-2 rounded-md px-[30px] max-w-sm flex flex-col justify-between gap-[30px]">
+                            <div class="card-heading flex flex-row mt-[43px] gap-[15px] items-center">
+                                <div class="logo"><img src="images/logos/figmaLogo.png" alt=""></div>
+                                <p class="service-title text-lg">Figma Web Designing</p>
+                            </div>
+                            <div>
+                                <p>Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now. In built table in an rapid blush. Merits behind on afraid or warmly.</p>
+                            </div>
+                            <div class="pb-[40px] underline">
+                                <p>Read More</p>
+                            </div>
+                        </div>
+                        <div class="card-two border-2 rounded-md px-[30px] max-w-sm flex flex-col justify-between gap-[30px]">
+                            <div class="card-heading flex flex-row mt-[43px] gap-[15px] items-center">
+                                <div class="logo"><img src="images/logos/phpLogo.png" alt=""></div>
+                                <p class="service-title text-lg">Php Development</p>
+                            </div>
+                            <div>
+                                <p>Really boy law county she unable her sister. Feet you off its like like six. Among sex are leave law built now. In built table in an rapid blush. Merits behind on afraid or warmly.</p>
+                            </div>
+                            <div class="pb-[40px] underline">
+                                <p>Read More</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="learn-more mt-[80px] mb-[140px]">
+                    <button class="bg-[#49AD09] w-[225px] h-[58px] rounded-md shadow-2xl text-white">Learn More</button>
+                </div>
+            </div>
+        </section>
+        <!-- Section Logo and Specifications START -->
+
+         <!-- Our Work Section START -->
+        <section class="our-work">
+            <div class="descr-text flex flex-col justify-center items-center gap-[30px] text-center">
+                <p>Our Work</p>
+                <h2 class="specialization-heading text-[30px] md:text-[45px]">Our Portfolio</h2>
+            </div>
+
+            <div class="portfolio flex flex-col justify-center px-[20px] lg:px-[0px]">
+                <div class="cards-porfolio grid md:grid-cols-2 max-w-5xl mx-auto md:gap-[49px]">
+                    <div class="col-first max-w-md mt-[80px]">
+                        <div class="row-one">
+                            <img src="images/portfolio1.png" alt="">
+                            <div class="portofolio-item-info flex flex-col md:flex-row justify-center items-center md: justify-between md-items-center mt-[24px]">
+                                <p class="portoflio-item-text text-2xl">Fashion Landing page</p>
+                                <p class="text-lg text-[#49AD09]">View Details</p>
+                            </div>
+                        </div>
+                        <div class="row-two mt-[70px]">
+                            <img src="images/furniture-shop.png" alt="">
+                            <div class="portofolio-item-info flex flex-col md:flex-row justify-center items-center md: justify-between md-items-center mt-[24px]">
+                                <p class="portoflio-item-text text-2xl">Furniture Shop</p>
+                                <p class="text-lg text-[#49AD09]">View Details</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sec max-w-md mt-[70px] md:mt-[135px]">
+                        <div class="row-one">
+                            <img src="images/health-and-fitness.png" alt="">
+                            <div class="portofolio-item-info flex flex-col md:flex-row justify-center items-center md: justify-between md-items-center mt-[24px]">
+                                <p class="portoflio-item-text text-2xl">Health & Fitness</p>
+                                <p class="text-lg text-[#49AD09]">View Details</p>
+                            </div>
+                        </div>
+                        <div class="row-two mt-[70px]">
+                            <img src="images/itSolution.png" alt="">
+                            <div class="portofolio-item-info flex flex-col md:flex-row justify-center items-center md: justify-between md-items-center mt-[24px]">
+                                <p class="portoflio-item-text text-2xl">IT Solution Provider</p>
+                                <p class="text-lg text-[#49AD09]">View Details</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="learn-more mt-[80px] mb-[140px] mx-auto">
+                    <button class="bg-[#49AD09] w-[225px] h-[58px] rounded-md shadow-2xl text-white">All Projects</button>
+                </div>
+            </div>
+        </section>
+        <!-- Our Work Section END -->
+
+        <!-- Testimortals Section START -->
+        <section class="testimortals mb-[140px]">
+            <div class="vector-image-2 hidden lg:block">
+                <img src="images/vector-2.png" alt="">
+            </div>
+            <div class="testimortals-container">
+                <div class="descr-text flex flex-col justify-center items-center gap-[30px] text-center">
+                    <p text-lg>Testimortals</p>
+                    <h2 class="specialization-heading text-[30px] md:text-[45px]">What Customers Says</h2>
+                </div>
+            </div>
+            <div class="reviewsBox">
+                <div class="reviews-slider max-w-4xl h-[540px] mx-auto flex flex-row bg-[#F2F2F2] mt-[80px]">
+                    <div class="reviews-cards-boxes flex flex-col justify-center items-center">
+                        <div class="reviews-cards flex flex-col md:flex-row justify-center items-center gap-[20px] mb-[50px]">
+                            <div class="card-one gallery-cell max-w-sm bg-white px-[32px] py-[40px] flex flex-col justify-between gap-[20px]rounded-md drop-shadow-xl">
+                                <p class="font-semibold text-sm">Superb Work!</p>
+                                <p class="text-base">“Blessing welcomed ladyship she met humoured sir breeding her. Six curiosity day assurance bed necessary.”</p>
+                                <div>
+                                    <span><i class="fa-solid fa-star" style="color: #FBB040;"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: #FBB040;"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: #FBB040;"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: #FBB040;"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: #FBB040;"></i></span>
+                                </div>
+                                <p class="font-semibold text-sm">Sabo Masties</p>
+                            </div>
+
+                            <div class="card-one gallery-cell max-w-sm bg-white px-[32px] py-[40px] flex flex-col justify-between gap-[20px]rounded-md drop-shadow-xl">
+                                <p class="font-semibold text-sm">Superb Work!</p>
+                                <p class="text-base">“Blessing welcomed ladyship she met humoured sir breeding her. Six curiosity day assurance bed necessary.”</p>
+                                <div>
+                                    <span><i class="fa-solid fa-star" style="color: #FBB040;"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: #FBB040;"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: #FBB040;"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: #FBB040;"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: #FBB040;"></i></span>
+                                </div>
+                                <p class="font-semibold text-sm">Sabo Masties</p>
+                            </div>
+
+                            <div class="card-one max-w-sm bg-white px-[32px] py-[40px] flex flex-col justify-between gap-[20px]rounded-md drop-shadow-xl">
+                                <p class="font-semibold text-sm">Superb Work!</p>
+                                <p class="text-base">“Blessing welcomed ladyship she met humoured sir breeding her. Six curiosity day assurance bed necessary.”</p>
+                                <div>
+                                    <span><i class="fa-solid fa-star" style="color: #FBB040;"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: #FBB040;"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: #FBB040;"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: #FBB040;"></i></span>
+                                    <span><i class="fa-solid fa-star" style="color: #FBB040;"></i></span>
+                                </div>
+                                <p class="font-semibold text-sm">Sabo Masties</p>
+                            </div>
+                        </div>
+                        <div class="review-buttons bg-white w-[120px] h-[66px] flex justify-center items-center rounded-[70px] gap-[22px]">
+                            <button class="prev"><i class="fa-sharp fa-solid fa-left-long" style="color: #313131;"></i></button>
+                            <button class="next rounded-full bg-black w-[50px] h-[50px]"><i class="fa-solid fa-right-long" style="color: #ffffff;"></i></button>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </section>
+        <!-- Testimortals Section END -->
+
+        <!-- Prices Container Start -->
+        <section class="price-section">
+            <div class="rectangle-image hidden lg:block">
+                <img src="images/rectangle.png" alt="">
+            </div>
+            <div class="price-container">
+                <div class="prices-heading">
+                    <div class="descr-text flex flex-col justify-center items-center gap-[30px] text-center">
+                        <p text-lg>Pricing</p>
+                        <h2 class="specialization-heading text-[30px] md:text-[45px]">Pricing Policy</h2>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pricing-cards-container flex flex-col lg:flex-row justify-center items-center mt-[80px] gap-[42px]">
+                <div class="price-card p-[50px] border-solid border-inherit border-[1px] max-w-[362px] flex flex-col justify-between gap-[21px] items-center min-h-[607px]">
+                    <p class="price-heading text-[#313131] text-3xl">For Starter</p>
+                    <p class="price-text text-6xl">$1499</p>
+                    <div class="price-list-characteristics">
+                        <ul class="flex flex-col gap-[16px]">
+                            <li class="price-heading"><i class="fa-solid fa-circle-check fa-xs" style="color: #514040;"></i> Feedback Categorization</li>
+                            <li class="price-heading"><i class="fa-solid fa-circle-check fa-xs" style="color: #514040;"></i> Features prioritization</li>
+                            <li class="price-heading"><i class="fa-solid fa-circle-check fa-xs" style="color: #514040;"></i> Real-time collaboration</li>
+                            <li class="price-heading"><i class="fa-solid fa-circle-check fa-xs" style="color: #514040;"></i> Feedback loop notifications</li>
+                            <li class="price-heading"><i class="fa-solid fa-circle-check fa-xs" style="color: #514040;"></i> Essential dev tools integrations</li>
+                        </ul>
+                    </div>
+                    <div class="request-btn mt-[49px] mb-[52px]">
+                        <button class="bg-transparent hover:bg-[#49AD09] hover:text-white w-[225px] h-[58px] rounded-md text-[#514040] border-[#514040] border-[1px]">Request Demo</button>
+                    </div>
+                </div>
+
+                <div class="price-card p-[50px] border-solid border-inherit border-[1px] max-w-[362px] flex flex-col justify-between gap-[21px] items-center shadow-2xl min-h-[607px]">
+                    <p class="price-heading text-[#313131] text-3xl">For Teams</p>
+                    <p class="price-text text-6xl">$2999</p>
+                    <div class="price-list-characteristics">
+                        <ul class="flex flex-col gap-[16px]">
+                            <li class="price-heading"><i class="fa-solid fa-circle-check fa-xs" style="color: #514040;"></i> Feedback Categorization</li>
+                            <li class="price-heading"><i class="fa-solid fa-circle-check fa-xs" style="color: #514040;"></i> Features prioritization</li>
+                            <li class="price-heading"><i class="fa-solid fa-circle-check fa-xs" style="color: #514040;"></i> Real-time collaboration</li>
+                            <li class="price-heading"><i class="fa-solid fa-circle-check fa-xs" style="color: #514040;"></i> Feedback loop notifications</li>
+                            <li class="price-heading"><i class="fa-solid fa-circle-check fa-xs" style="color: #514040;"></i> Essential dev tools integrations</li>
+                        </ul>
+                    </div>
+                    <div class="request-btn mt-[49px] mb-[52px]">
+                        <button class="bg-[#49AD09] hover:bg-transparent hover:text-[#514040] hover:border-[#514040] hover:border-[1px] w-[225px] h-[58px] shadow-2xl rounded-md text-white">Request Demo</button>
+                    </div>
+                </div>
+
+                <div class="price-card p-[50px] border-solid border-inherit border-[1px] max-w-[362px] flex flex-col justify-between gap-[21px] items-center min-h-[607px]">
+                    <p class="price-heading text-[#313131] text-3xl">For Companies</p>
+                    <p class="price-text text-6xl">Custom</p>
+                    <div class="price-list-characteristics">
+                        <ul class="flex flex-col gap-[16px]">
+                            <li class="price-heading"><i class="fa-solid fa-circle-check fa-xs" style="color: #514040;"></i> Feedback Categorization</li>
+                            <li class="price-heading"><i class="fa-solid fa-circle-check fa-xs" style="color: #514040;"></i> Feedback loop notifications</li>
+                            <li class="price-heading"><i class="fa-solid fa-circle-check fa-xs" style="color: #514040;"></i> Essential dev tools integrations</li>
+                        </ul>
+                    </div>
+                    <div class="request-btn mt-[49px] mb-[52px]">
+                        <button class="bg-transparent hover:bg-[#49AD09] hover:text-white w-[225px] h-[58px] rounded-md text-[#514040] border-[#514040] border-[1px]">Request Demo</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Prices Container END -->
+
+        <!-- Contact Container START -->
+        <section class="contact-section mt-[140px] mb-[127px]">
+            <div class="contact-container flex flex-col justify-center items-center gap-[53px]">
+                <div>
+                <h2 class="contact-heading max-w-[425px] text-[30px] md:text-[45px] text-center">Need a little more home to grow?</h2>
+                </div>
+                <div class="contact-button">
+                    <button class="bg-[#49AD09] hover:bg-transparent hover:text-[#514040] hover:border-[#514040] hover:border-[1px] w-[225px] h-[58px] shadow-2xl rounded-md text-white">Contact Us</button>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Container END -->
+    </div>
+    <!-- Content Container END -->
+
+    <!-- FOOTER Container START -->
+    <footer>
+        <div class="rectangle-right hidden lg:block">
+            <img src="images/rectangle-2.png" alt="">
+        </div>
+        <div class="footer-container flex flex-col px-[20px] md:px-[135px]">
+            <div class="rowOne flex flex-col lg:flex-row justify-between gap-[20px] md:gap-[20px] lg:gap-0">
+                <div class="col-1 flex flex-col gap-[64px] max-w-[236px]">
+                    <div class="logo-contain flex flex-col gap-[35px]">
+                        <p class="footer-logo text-[#313131] text-2xl">Web.dev</p>
+                        <p>You’ll find your next home loan valu you prefer.</p>
+                    </div>
+                    <div class="social flex flex-row gap-[15px]">
+                        <span class="bg-[#F2F2F2] px-[8px] py-[2px]"><i class="fa-brands fa-facebook-f" style="color: #313131;"></i></span>
+                        <span class="bg-[#F2F2F2] px-[8px] py-[2px]"><i class="fa-brands fa-twitter" style="color: #313131;"></i></span>
+                        <span class="bg-[#F2F2F2] px-[8px] py-[2px]"><i class="fa-brands fa-linkedin-in" style="color: #313131;"></i></span>
+                    </div>
+                </div>
+                <div class="col-2 flex flex-col md:flex-row gap-[50px] md:gap-[200px] justify-between">
+                    <div class="menu-one flex flex-col gap-[39px] justify-between">
+                        <div>
+                            <p class="f-menu-heading">Resources</p>
+                        </div>
+                        <div>
+                            <ul class="flex flex-col gap-[28px]">
+                                <li>Our Agents</li>
+                                <li>Member Stories</li>
+                                <li>Video</li>
+                                <li>Free trial</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu-two flex flex-col gap-[39px] justify-between">
+                        <div>
+                            <p class="f-menu-heading">Company</p>
+                        </div>
+                        <div>
+                            <ul class="flex flex-col gap-[28px]">
+                                <li>Partnerships</li>
+                                <li>Terms of use</li>
+                                <li>Privacy</li>
+                                <li>Sitemap</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div>
+                        <p class="f-menu-heading mb-[37px]">Get in touch</p>
+                        <div class="email bg-[#F2F2F2] max-w-[200px] h-[40px] flex flex-row items-center pr-[20px]">
+                            <input class="bg-[#F2F2F2] pl-[10px] max-w-[200px]" type="email" id="email" name="email" placeholder="Enter your mail">
+                            <span class="ml-[-20px]"><i class="fa fa-arrow-circle-o-right" style="font-size:24px;color:#514040;"></i> </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rowTwo mt-[77px] mb-[40px]"><hr class="border-[#EDEDED] border-[1px]"></div>
+            <div class="rowThree">
+                <p class="foot-copy-text text-center flex flex-row justify-center items-center mb-[40px] text-[#313131]">Copyright 2021 &copy;Web.Dev All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER Container END -->
+
+    <!-- jQuery Nav Code START -->
+    <script type="text/javascript">
+        $(".menu-toggle-btn").click(function() {
+            $(this).toggleClass("fa-times");
+            $(".menu").toggleClass("active");
+        });
+    </script>
+    <!-- jQuery Nav Code END -->
+
+    <!-- jQuery Slide Code START -->
+    <!-- <script>
+  $(document).ready(function () {
+        $('.prev').click(function () {
+            $(".reviews-cards").animate({ "left": "+=70px" }, "medium");
+        });
+        $('.next').click(function () {
+            $(".reviews-cards").animate({ "left": "-=70px" }, "medium");
+        });
+
+    });
+    </script> -->
+    <!-- jQuery Slide Code END -->
+</body>
+</html>

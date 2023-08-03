@@ -1,0 +1,260 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+    font-family: 'Gilroy-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Bold'), url('font/Gilroy-Bold.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Gilroy-Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Heavy'), url('font/Gilroy-Heavy.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Gilroy-Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Light'), url('font/Gilroy-Light.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Medium'), url('font/Gilroy-Medium.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Gilroy-Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Gilroy-Regular'), url('font/Gilroy-Regular.woff') format('woff');
+    }
+
+/* Stytles */
+
+* {
+    font-family: 'Gilroy-Regular', sans-serif;
+}
+
+.p-logo {
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.menu {
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+.header-contain {
+    position: relative;
+}
+
+.figure-menu {
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+
+.hero-h1 {
+    font-family: 'Gilroy-Heavy', sans-serif;
+}
+
+.watch-btn {
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.left-figure-hero {
+    position: absolute;
+    top: 210px;
+    left: 0;
+    z-index: 2;
+}
+
+.right-figure-hero {
+    position: absolute;
+    top: 175px;
+    right: 0;
+    z-index: 2;  
+}
+
+.content-container {
+    position: relative;
+}
+
+.vector-image-left {
+    position: absolute;
+    top: -250px;
+    left: -40px;
+    z-index: -2;
+    transform: rotate(-8deg);
+}
+
+.vector-image-right {
+    position: absolute;
+    top: 460px;
+    right: 0px;
+    z-index: -2;
+}
+
+.specialization-heading {
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+.service-title {
+    font-family: 'Gilroy-Bold', sans-serif;
+}
+
+.reviews-slider {
+    position:relative;
+    z-index:2;
+}
+
+
+
+.reviews-cards {
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    left: 0;
+    bottom: 70px;
+    z-index: 1;
+}
+
+.review-buttons {
+    position: absolute;
+    left: 350px;
+    bottom: 0px;
+}
+
+/* Mobile Nav START */
+
+.menu-toggle-btn {
+    float: right;
+    font-size: 26px;
+    display: none !important;
+}
+
+.portoflio-item-text {
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+.price-heading {
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+.price-text {
+    font-family: 'Gilroy-SemiBold', sans-serif;
+}
+
+.testimortals {
+    position: relative;
+}
+
+.vector-image-2 {
+    position: absolute;
+    top: 150px;
+    right:0;
+}
+
+.price-section {
+    position: relative;
+}
+
+.rectangle-image {
+    position: absolute;
+    top: 226px;
+    left:0;
+}
+
+.contact-heading {
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+.footer-logo {
+    font-family: 'Gilroy-Bold', sans-serif;  
+}
+
+.f-menu-heading {
+    font-family: 'Gilroy-Bold', sans-serif;  
+}
+
+.foot-copy-text {
+    font-family: 'Gilroy-Medium', sans-serif;
+}
+
+footer {
+    position: relative;
+}
+
+.rectangle-right {
+    position: absolute;
+    top: -150px;
+    right: 0;
+}
+
+@media screen and (max-width: 900px) {
+    .menu-toggle-btn {
+        display: block !important;
+        cursor: pointer;
+    }
+
+    .menu {
+        position: fixed;
+        width: 90%;
+        max-width: 400px;
+        background-color: #fff;
+        top: 90px;
+        right: 0px;
+        display: none;
+        padding: 20px 40px;
+        box-sizing: border-box;
+    }
+
+    .menu::before {
+        content: "";
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+        position: absolute;
+        top: -10px;
+        right: 10px;
+
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .reviews-slider {
+        margin-bottom: 300px;
+    }
+
+    .reviews-cards {
+        position: absolute;
+        left: 0;
+        top: 250px;
+        z-index: 1;
+    }
+    
+    .review-buttons {
+        display: none;
+        left: 0px;
+    }
+}
+
+/* Mobile Nav END*/
