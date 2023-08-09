@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1-Space</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body>
+<div class="page-content px-[20px] pt-[20px]">
+    <div class="hero">
+        <header>
+            <!-- Desktop navigation START -->
+            <nav class="desktop-menu md:pt-[56px] md:pl-[131px] md:pr-[91px] md:pb-[106px]">
+                <div class="menu flex flex-row justify-between items-center">
+                    <div class="menu-col1 menu-style ">
+                        <ul class="flex flex-row gap-[42px]">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-col2 md:px-[20px]">
+                        <p class="logo">1-Space</p>
+                    </div>
+                    <div class="menu-col3 menu-style">
+                        <ul class="flex flex-row gap-[42px]">
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Spaces</a></li>
+                            <li><a href="#">Events</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Desktop navigation END -->
+
+            <!-- Mobile navigation START -->
+            <nav>
+                <div class="mobile-nav flex flex-row justify-between items-center mb-[20px] md:hidden pb-[20px]">
+                    <div class="menu-mobile-col1">
+                        <p class="logo">1-Space</p>
+                    </div>
+                     <i class="menu-toggle-btn fas fa-bars"></i>
+                </div>
+                <div class="menu-mob menu-style flex flex-col justify-center items-center md:hidden pb-[20px]">
+                    <div class="menu-mobile-col2">
+                        <ul class="flex flex-col gap-[12px] text-center">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Spaces</a></li>
+                            <li><a href="#">Events</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Mobile navigation START -->
+        </header>
+
+        <section class="hero-content-section p-[20px]  md:pl-[146px]">
+            <div class="hero-content ">
+                <div class="hero-col1 md:pt-[224px] z-10">
+                    <div class="vector-image">
+                        <img src="images/hero-vector-1.png" alt="Vector Image">
+                    </div>
+                    <div class="hero-heading text-4xl md:text-6xl font-bold max-w-[500px]">
+                        <h2>A new way to revolutionise your workspace to yourself</h2>
+                    </div>
+                    <div class="location-form mt-[64px] flex flex-col md:flex-row md:justify-between md:items-center max-w-[777px] md:pl-[41px] md:pr-[34px] px-[20px] md:px-0 py-[22px] gap-[20px] md:gap-0">
+                        <div class="location-icon flex flex-row gap-[7px] items-center">
+                            <img class="w-[15px] h-[20px]" src="images/map-icon.png" alt="Map Icon"> <span class="text-lg text-[#989898]">City</span>
+                        </div>
+                        <div class="location-input">
+                            <input type="text" placeholder="Location" class="bg-transparent text-lg">
+                        </div>
+                        <div class="location-button">
+                            <button class="universal-button">
+                                Schedule Visit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="people-container mt-[29px] flex flex-col md:flex-row items-center gap-[20px]">
+                    <div class="people-images z-10">
+                        <span><img class="inline" src="images/people/human-1.png" alt="Human 1"></span>
+                        <span><img class="inline ml-[-18px]" src="images/people/human-2.png" alt="Human 2"></span>
+                        <span><img class="inline ml-[-18px]" src="images/people/human-3.png" alt="Human 3"></span>
+                        <span><img class="inline ml-[-18px]" src="images/people/human-4.png" alt="Human 4"></span>
+                        <span><img class="inline ml-[-18px]" src="images/people/human-5.png" alt="Human 5"></span>
+                        <span><img class="inline ml-[-18px]" src="images/people/human-6.png" alt="Human 6"></span>
+                        <span class="social-text ml-[-18px] bg-[#13DED2] rounded-full px-[10px] py-[13px] text-[10px] text-white border-2 border-white">+10</span>
+                    </div>
+                    <div class="people-text font-medium text-xs z-10">
+                        <p>16 people booked a visit in last 24 hours</p>
+                    </div>
+                </div>
+
+                <!-- images -->
+                <div class="big-image">
+                    <img class="z-0" src="images/big-image.png" alt="">
+                </div>
+
+                <div class="big-image-frame">
+                    <img src="images/big-image-frame.png" alt="">
+                </div>
+
+                <div class="hero-image1">
+                    <img src="images/hero-image-1.png" alt="">
+                </div>
+
+                <div class="hero-image2">
+                    <img src="images/hero-image-2.png" alt="">
+                </div>
+
+                <div class="hero-image3">
+                    <img src="images/hero-image-3.png" alt="">
+                </div>
+                
+                <div class="vertical-text text-5xl font-bold text-[#989898]">
+                    <span>CoWorking</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="companies-logos mt-[91px] pb-[194px]">
+            <div class="logos flex flex-col md:flex-row justify-center items-center gap-[46px]">
+                <span><img src="images/logos/google.png" alt="Google"></span>
+                <span><img src="images/logos/slack.png" alt="Slack"></span>
+                <span><img src="images/logos/atlassian.png" alt="Atlassian"></span>
+                <span><img src="images/logos/dropbox.png" alt="Dropbox"></span>
+                <span><img src="images/logos/shopify.png" alt="Shopify"></span>
+            </div>
+        </section>
+    </div>
+
+    <section class="services-content">
+        <div class="services-container flex flex-col md:flex-row justify-center items-center">
+            <div class="services-image-col">
+                <img src="images/services-image.png" alt="Services Image">
+                <div class="scroll text-center ml-[-60px]">
+                    <span class="bg-[#FD5B2F] px-[9px] mr-[5px]"> </span>
+                    <span class="bg-[#E9E9E9] px-[9px] mr-[5px]"> </span>
+                    <span class="bg-[#E9E9E9] px-[9px]"> </span>
+                </div>
+            </div>
+            <div class="services-content-col">
+                <p class="robotoFont uppercase italic font-extrabold text-[#FD5B2F] text-lg mt-[20px]">Services</p>
+                <h2 class="robotoFont font-semibold text-[30px] md:text-[52px] italic max-w-[552px]">Solutions designed for all your needs</h2>
+                <p class="people-text font-normal text-lg text-black max-w-[582px] leading-9 mt-[22px]">Coworking is an arrangement in which workers of different companies share an office space, allowing cost savings and convenience through the use of common infrastructures, such as equipment, utilities, and receptionist and custodial services, and in some cases refreshments and parcel acceptance services.</p>
+                <div class="services-buttons flex flex-col md:flex-row gap-[30px] md:gap-[52px] mt-[83px]">
+                    <button class="universal-button italic">View Availability</button>
+                    <button><span><i class="fa-sharp fa-regular fa-circle-play fa-2xl mr-[10px]" style="color: #FD5B2F;"></i></span> 3D Tour of Space</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="visions-section relative">
+        <div class="visions-container flex flex-col lg:flex-row mt-[136px] justify-center md:pl-[90px] items-center">
+            <div class="content-container z-10">
+                <p class="robotoFont uppercase italic font-extrabold text-[#FD5B2F] text-lg mt-[20px]">Visions</p>
+                <h2 class="robotoFont font-semibold text-[30px] md:text-[52px] italic max-w-[552px]">Our vision in 1-space to
+                    make something</h2>
+                <p class="people-text font-normal text-lg text-black max-w-[582px] leading-9 mt-[22px]">Coworking is an arrangement in which workers of different companies share an office space, allowing cost savings and convenience through the use of common infrastructures services.</p>
+                <div class="visions-list mt-[30px] flex flex-col md:flex-row gap-[24px]">
+                    <div class="visions-list-col1">
+                        <ul>
+                            <li>
+                                <span class="flex flex-row gap-[13px]">
+                                    <img src="images/icons/icon-1.png" alt="">
+                                    <span class="robotoFont text-base text-black font-medium">High quality co-living spaces</span>
+                                </span>
+                                <p class="social-text pl-[36px] max-w-[270px] text-xs italic mt-[16px]">Coworking is an arrangement in which workers of different companies.</p>
+                            </li>
+                            <li class="mt-[26px]">
+                                <span class="flex flex-row gap-[13px]">
+                                    <img src="images/icons/icon-3.png" alt="">
+                                    <span class="robotoFont text-base text-black font-medium">Simple and inclusive</span>
+                                </span>
+                                <p class="social-text pl-[36px] max-w-[270px] text-xs italic mt-[16px]">Coworking is an arrangement in which workers of different companies.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="visions-list-col2">
+                        <ul>
+                            <li>
+                                <span class="flex flex-row gap-[13px]">
+                                    <img src="images/icons/icon-2.png" alt="">
+                                    <span class="robotoFont text-base text-black font-medium">Equipped for productivity</span>
+                                </span>
+                                <p class="social-text pl-[36px] max-w-[270px] text-xs italic mt-[16px]">Coworking is an arrangement in which workers of different companies.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row gap-[30px] md:gap-[52px] mt-[62px]">
+                    <button class="universal-button italic robotoFont font-thin">Explore more</button>
+                </div>
+            </div>
+            <div class="image-container z-10">
+                <img src="images/visions-image.png" alt="">
+            </div>
+
+            <div class="vector-container absolute top-[179px] left-[71px] z-0">
+                <img src="images/third-section-img.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="solutions-section relative">
+        <div class="vector-container absolute top-[113px] left-[83px] z-0">
+            <img src="images/solution-vector.png" alt="">
+        </div>
+        <div class="solutions-container flex flex-col lg:flex-row lg:pl-[100px] md:mt-[270px] items-center pt-[156px] relative gap-[83px] 2xl:pl-[250px] pb-[156px] z-10">
+            <div class="solutions-content-col z-20">
+                <p class="robotoFont uppercase italic font-extrabold text-[#FD5B2F] text-lg mt-[20px]">Solutions</p>
+                <h2 class="robotoFont font-semibold text-[30px] md:text-[52px] italic max-w-[552px]">The 1-space all view
+                    experience technology</h2>
+                <p class="people-text font-normal text-lg text-black max-w-[582px] leading-9 mt-[22px]">Coworking is an arrangement in which workers of different companies share an office space, allowing cost savings and convenience through the use of common infrastructures, such as equipment, utilities, and receptionist and custodial services, and in some cases refreshments and parcel acceptance services.</p>
+                <div class="flex flex-col md:flex-row gap-[30px] md:gap-[52px] mt-[83px]">
+                    <button class="universal-button italic robotoFont font-extrabold">View Availability</button>
+                </div>
+            </div>
+            <div class="solutions-image-col z-10">
+                <div class="image-container">
+                    <img class="lg:absolute top-0 right-[-20px]" src="images/solutions-image.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits-section">
+        <div class="benefits-container flex flex-col justify-center items-center gap-[52px] pb-[156px]">
+            <div class="benefits-row1 text-center">
+                <p class="robotoFont uppercase italic font-extrabold text-[#FD5B2F] text-lg mt-[20px]">Why Choose Us?</p>
+                <h2 class="robotoFont font-semibold text-[30px] md:text-[52px] italic max-w-[552px]">The benefits that will
+                    make you comfort</h2>
+            </div>
+            <div class="benefits-row2 flex flex-col md:flex-row justify-center items-center gap-[37px]">
+                <div class="benefits-col-1 max-w-[217px] flex flex-col justify-center items-center text-center">
+                    <img src="images/icons/event.png" alt="Event">
+                    <h3 class="robotoFont text-xl text-black font-medium pt-[32px] pb-[16px]">Community Events</h3>
+                    <p class="social-text italic font-thin">Allowing cost savings and convenience through the use of common infrastructures.</p>
+                </div>
+                <div class="benefits-col-2 max-w-[217px] flex flex-col justify-center items-center text-center">
+                    <img src="images/icons/dumbbell.png" alt="Event">
+                    <h3 class="robotoFont text-xl text-black font-medium pt-[32px] pb-[16px]">Exercise Facilities</h3>
+                    <p class="social-text italic font-thin">Allowing cost savings and convenience through the use of common infrastructures.</p>
+                </div>
+                <div class="benefits-col-3 max-w-[217px] flex flex-col justify-center items-center text-center">
+                    <img src="images/icons/wifi.png" alt="Event">
+                    <h3 class="robotoFont text-xl text-black font-medium pt-[32px] pb-[16px]">High-Speed Wireless</h3>
+                    <p class="social-text italic font-thin">Allowing cost savings and convenience through the use of common infrastructures.</p>
+                </div>
+                <div class="benefits-col-4 max-w-[217px] flex flex-col justify-center items-center text-center">
+                    <img src="images/icons/internet.png" alt="Event">
+                    <h3 class="robotoFont text-xl text-black font-medium pt-[32px] pb-[16px]">Global Availability</h3>
+                    <p class="social-text italic font-thin">Allowing cost savings and convenience through the use of common infrastructures.</p>
+                </div>
+                <div class="benefits-col-5 max-w-[217px] flex flex-col justify-center items-center text-center">
+                    <img src="images/icons/armchair.png" alt="Event">
+                    <h3 class="robotoFont text-xl text-black font-medium pt-[32px] pb-[16px]">Comfort Lounges</h3>
+                    <p class="social-text italic font-thin">Allowing cost savings and convenience through the use of common infrastructures.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-section pb-[210px]">
+        <div class="gallery-container flex flex-col lg:flex-row gap-[32px] justify-center items-center">
+            <div class="gallery-col">
+                <div class="gallery-row1 mb-[20px]">
+                    <p class="robotoFont uppercase italic font-extrabold text-[#FD5B2F] text-lg mt-[20px]">Gallery</p>
+                    <h2 class="robotoFont font-semibold text-[30px] md:text-[52px] italic max-w-[552px]">Immersive beautiful
+                        co-working space gallery</h2>
+                </div>
+                <div class="gallery-row2">
+                    <div class="flex flex-col gap-[32px]">
+                        <div class="gap-[32px] flex flex-row">
+                            <div class="col-1 col-span-2"><img src="images/gallery-images/img-1.png" alt=""></div>
+                            <div class="col-2"><img src="images/gallery-images/img-2.png" alt=""></div>
+                        </div>
+                        <div class="gap-[32px] flex flex-row">
+                            <div class="col-3"><img src="images/gallery-images/img-3.png" alt=""></div>
+                            <div class="col-4"><img src="images/gallery-images/img-4.png" alt=""></div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="gallery-image-col">
+                <img src="images/gallery-image.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="membership-section">
+        <div class="membership-container flex flex-col md:flex-row justify-center items-center pb-[220px] gap-[56px]">
+            <div class="membership-content-col-1">
+                <p class="robotoFont uppercase italic font-extrabold text-[#FD5B2F] text-lg mt-[20px]">Become a member</p>
+                <h2 class="robotoFont font-semibold text-[30px] md:text-[52px] italic max-w-[552px]">Ready to try different work
+                    environment now?</h2>
+                <p class="people-text font-normal text-lg text-black max-w-[582px] leading-9 mt-[22px]">Coworking is an arrangement in which workers of different companies share an office space, allowing cost savings and convenience through the use of common infrastructures, such as equipment, utilities, and receptionist and custodial services, and in some cases refreshments and parcel acceptance services.</p>
+                <div class="membership-buttons flex flex-col md:flex-row gap-[30px] md:gap-[42px] mt-[43px]">
+                    <button class="universal-button italic">Sign Up Now</button>
+                    <button class="universal-button2 italic"><span>Schedule Visit</button>
+                </div>
+            </div>
+            <div class="membership-img-col-2">
+                <img src="images/membership-image.png" alt="Membership Image">
+            </div>
+        </div>
+    </section>
+
+      <!-- FOOTER Container START -->
+      <footer>
+        <div class="footer-container flex flex-col px-[20px] md:px-[135px] pb-[124px]">
+            <div class="rowOne flex flex-col lg:flex-row justify-between gap-[20px] md:gap-[20px] lg:gap-0">
+                <div class="col-1 flex flex-col gap-[64px] max-w-[294px]">
+                    <div class="logo-contain flex flex-col gap-[24px]">
+                        <p class="location-input footer-logo text-[#313131] text-2xl font-bold">1-Space</p>
+                        <p class="font-thin italic text-base">Men cannot not live by exchanging articles, but producing them. They live by work not trade.</p>
+                    </div>
+                </div>
+                <div class="col-2 flex flex-col md:flex-row gap-[50px] md:gap-[87px] justify-between">
+                    <div class="menu-one flex flex-col gap-[24px] justify-between">
+                        <div>
+                            <p class="robotoFont text-xl text-[#FD5B2F] font-semibold">Company</p>
+                        </div>
+                        <div>
+                            <ul class="flex flex-col gap-[21px]">
+                                <li><a href="#">Global Localities</a> </li>
+                                <li><a href="#">Missions</a> </li>
+                                <li><a href="#">Careers</a> </li>
+                                <li><a href="#">Investors</a> </li>
+                                <li><a href="#">Newsroom</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="menu-two flex flex-col gap-[24px] justify-start">
+                        <div>
+                            <p class="robotoFont text-xl text-[#FD5B2F] font-semibold">Partnership</p>
+                        </div>
+                        <div>
+                            <ul class="flex flex-col gap-[21px]">
+                                <li><a href="#">Tasks</a> </li>
+                                <li><a href="#">Profile</a> </li>
+                                <li><a href="#">Events</a> </li>
+                                <li><a href="#">Services</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div>
+                        <p class="robotoFont text-xl text-[#FD5B2F] font-semibold mb-[27px]">Follow us</p>
+                        <div class="social flex flex-row gap-[8px]">
+                            <span><a href=""><img src="images/social/facebook.png" alt=""></a></span>
+                            <span><a href=""><img src="images/social/twitter.png" alt=""></a></span>
+                            <span><a href=""><img src="images/social/dribbble.png" alt=""></a></span>
+                            <span><a href=""><img src="images/social/linkedin.png" alt=""></a></span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER Container END -->
+</div>
+
+    <!-- jQuery Nav Code START -->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".menu-mob").css("display", "none");
+        })
+        $(".menu-toggle-btn").click(function() {
+            $(this).toggleClass("fa-times");
+            $(".menu-mob").toggle("active");
+        });
+    </script>
+    <!-- jQuery Nav Code END -->
+</body>
+</html>
