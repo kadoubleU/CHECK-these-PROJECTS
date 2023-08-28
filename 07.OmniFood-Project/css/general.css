@@ -4,7 +4,7 @@
 
 - font-sizes (px)
     10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
-
+ 
 - Font weights:
 Default: 400
 Medium: 500
@@ -71,6 +71,7 @@ Medium: 11px
   
   html {
     font-size: 62.5%;
+    overflow-x: hidden;
   }
   
   body {
@@ -78,6 +79,9 @@ Medium: 11px
     line-height: 1;
     font-weight: 400;
     color: #555;
+
+    /* Only works if there is nothing absolutely positioned in relation to body */
+    overflow-x: hidden;
   }
   
   /***************************/
