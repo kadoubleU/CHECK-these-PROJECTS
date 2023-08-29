@@ -9,7 +9,7 @@
 Default: 400
 Medium: 500
 Semi-bold: 600
-Bold: 700
+Bold: 700 
 
 - Line heights: 
 
@@ -121,9 +121,9 @@ Medium: 11px
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .grid--5-cols {
+  /* .grid--5-cols {
     grid-template-columns: repeat(5, 1fr);
-  }
+  } */
 
   .grid--center-v {
     align-items: center;
