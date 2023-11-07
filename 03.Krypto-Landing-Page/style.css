@@ -791,10 +791,109 @@ nav {
 }
 
 
+.market-analytics {
+    padding-top: 91px;
+    background: #160E33;
+}
 
+.crypto-market-analysis-h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 
+.crypto-market-analysis-p {
+    padding-top: 20px;
+    padding-bottom: 80px;
+    color: #FFF;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;;
+    opacity: 0.6;
+}
 
+.grid-posts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 165px;
+    padding-right: 165px;
+    gap: 30px;
+}
 
+.grid-post {
+    display: flex;
+    gap: 30px;
+}
+
+.img-grid-post-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img-grid-post-content h3 {
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.img-grid-post-content p {
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px; /* 27px */
+    opacity: 0.6;
+}
+
+.img-grid-post-content a {
+    color: #EF443B;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    text-decoration: none;
+}
+
+.grid-posts-btn {
+    display: flex;
+    justify-content: center;
+    padding-top: 46px;
+    padding-bottom: 135px;
+}
+
+.grid-posts-btn a {
+    color: #FFF;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    display: inline-flex;
+    padding: 18px 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    border: 2px solid var(--Red, #EF443B);
+    background: rgba(22, 14, 51, 0.50);
+    text-decoration: none;
+
+}
 
 
 
@@ -981,6 +1080,23 @@ nav {
         justify-content: flex-start;
         align-items: flex-start;
     }
+
+    .crypto-market-analysis-h2 {
+    font-size: 40px;
+    line-height: 50px;
+    }
+
+    .crypto-market-analysis-p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .grid-posts {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 30px;
+    padding-right: 30px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1007,6 +1123,7 @@ nav {
     .quotes-h2 {
         font-size: 44px;
     }
+
 }
 
 @media (max-width: 761px) {
@@ -1025,5 +1142,11 @@ nav {
         padding-left: 20px;
         padding-right: 20px;
         gap: 20px;
+    }
+}
+
+@media (max-width: 411px) {
+    .grid-post {
+        flex-direction: column;
     }
 }
