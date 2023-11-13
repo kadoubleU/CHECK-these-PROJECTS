@@ -1,0 +1,188 @@
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #040C18;
+}
+
+/* HEADER STYLES START */
+
+header {
+    position: relative;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7.1rem;
+    margin-left: 13.5rem;
+    margin-right: 13.5rem;
+    
+}
+
+.logo {
+    fill: #FFF;
+}
+
+.header-nav {
+    list-style-type: none;
+    display: flex;
+    gap: 3.4rem;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;   
+}
+
+.header-nav a:hover {
+    color: #FF4820;
+}
+
+.user-buttons {
+    display: flex;
+}
+
+.user-buttons a {
+    display: inline-block;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.user-buttons {
+    display: flex;
+    align-items: center;
+    gap: 2.6rem;
+}
+
+.signUp-btn {
+    background-color: #FF4820;
+    padding: 1.6rem 4.3rem;
+    border-radius: 0.5rem;
+}
+
+.signIn-btn:hover {
+    color: #FF4820;
+}
+
+.signUp-btn:hover {
+    background-color: #052D56;
+}
+
+.header-content {
+    margin-top: 12rem;
+    margin-left: 13.5rem;
+    margin-right: 13.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3.3rem;
+}
+
+.header-left-content h2 {
+    font-family: Manrope;
+    font-size: 6.2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 7.5rem; /* 120.968% */
+    letter-spacing: -0.248rem;
+    background: linear-gradient(90deg, #AE67FA 1.84%, #F49867 102.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-description {
+    color: #81AFDD;
+    font-family: Manrope;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    padding-left: 3.5rem;
+    padding-top: 1.8rem;
+    padding-bottom: 1.8rem;
+    border-radius: 0.5rem 0rem 0rem 0.5rem;
+    background: #052D56;
+    border: none;
+    min-width: 45.6rem;
+    color: #3D6184;
+    font-family: Manrope;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+:-ms-input-placeholder, ::-webkit-input-placeholder {
+    color: #3D6184;
+    font-family: Manrope;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.subscribe-btn {
+    border-radius: 0rem 0.5rem 0.5rem 0rem;
+    min-width: 17.4rem;
+    background: #FF4820;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 2.13rem 2.6rem;
+    cursor: pointer;
+    border: none;
+}
+
+.subscribe-btn:hover {
+    background-color: #052D56;
+}
+
+.header-right-image {
+    max-width: 50%;
+}
+
+/* HEADER STYLES END */
+
