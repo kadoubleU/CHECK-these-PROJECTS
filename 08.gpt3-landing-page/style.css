@@ -21,6 +21,8 @@ body {
 
 header {
     position: relative;
+    background-image: url(img/blur-01.svg);
+    background-size: cover;
 }
 
 .header {
@@ -28,9 +30,9 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 7.1rem;
-    margin-left: 13.5rem;
-    margin-right: 13.5rem;
+    padding-top: 7.1rem;
+    padding-left: 13.5rem;
+    padding-right: 13.5rem;
     
 }
 
