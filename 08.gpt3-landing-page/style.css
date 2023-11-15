@@ -95,7 +95,7 @@ header {
     background-color: #052D56;
 }
 
-.header-content {
+.header-columns {
     margin-top: 12rem;
     margin-left: 13.5rem;
     margin-right: 13.5rem;
@@ -182,9 +182,75 @@ input {
     background-color: #052D56;
 }
 
+.header-group-users {
+    display: flex;
+    align-items: center;
+
+}
+
+.user-photo-position {
+    display: inline-block;
+    margin-left: -1rem;
+}
+
+.users-num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: Manrope;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 3.7611rem; /* 470.134% */
+    width: 35.997px;
+    height: 35.997px;
+    flex-shrink: 0;
+    background-color: #13DED2;  
+    border-radius: 50%;
+    border: solid 0.3rem #fff;
+    margin-left: -1rem;
+}
+
+.users-description {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3.76rem;
+    margin-left: 1.3rem;
+}
+
 .header-right-image {
     max-width: 50%;
 }
 
+.header-right-image img {
+   min-width: 100%;
+}
+
 /* HEADER STYLES END */
+
+/* COMPANIES LOGOS STYLE START */
+
+.companies-logos {
+    margin-top: 12rem;
+    padding-bottom: 12.7rem;
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4.648rem;
+}
+
+.logos img {
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* COMPANIES LOGOS STYLE END */
 
