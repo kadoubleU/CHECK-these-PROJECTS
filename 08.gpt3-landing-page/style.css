@@ -21,11 +21,38 @@ body {
 
 header {
     position: relative;
-    background-image: url(img/blur-01.svg);
-    background-size: cover;
+    /* background-image: url(img/blur-01.svg);
+    background-size: cover; */
+}
+
+header::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    border-radius: 1013px;
+    background: #002853;
+    filter: blur(282px);
+    width: 1013px;
+    height: 1013px;
+    z-index: 1;
+}
+
+header::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    border-radius: 701px;
+    background: #072D56;
+    filter: blur(282px);
+    width: 701px;
+    height: 496px;
+    z-index: 1;
 }
 
 .header {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -33,6 +60,7 @@ header {
     padding-top: 7.1rem;
     padding-left: 13.5rem;
     padding-right: 13.5rem;
+    z-index: 2;
     
 }
 
@@ -96,6 +124,7 @@ header {
 }
 
 .header-columns {
+    position: relative;
     margin-top: 12rem;
     margin-left: 13.5rem;
     margin-right: 13.5rem;
@@ -103,6 +132,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    z-index: 2;
 }
 
 .header-left-content {
@@ -235,8 +265,10 @@ input {
 /* COMPANIES LOGOS STYLE START */
 
 .companies-logos {
+    position: relative;
     margin-top: 12rem;
     padding-bottom: 12.7rem;
+    z-index: 2;
 }
 
 .logos {
@@ -254,3 +286,215 @@ input {
 
 /* COMPANIES LOGOS STYLE END */
 
+/* chatGpt-info STYLES START */
+
+.chatGpt-info {
+    background: #042C54;
+    margin-left: 13.5rem;
+    margin-right: 13.5rem;
+    margin-bottom: 20.1rem;
+    padding-top: 5.7rem;
+    padding-bottom: 6.3rem;
+    padding-left: 6.1rem;
+    padding-right: 6.1rem;
+    position: relative;
+}
+
+.chatGpt-info-box {
+    display: flex;
+    flex-direction: column;
+    gap: 9.1rem;
+}
+
+.info-box-header {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15.4rem;
+}
+
+.chatGpt-info::before {
+    position: absolute;
+    content: "";
+    /* display: flex;
+    flex-direction: column; */
+    border-radius: 581px;
+    background: #0F4279;
+    filter: blur(60px);
+    width: 18.1rem;
+    height: 14.1rem;
+    top: 0rem;
+    left: 0rem;
+}
+
+
+.info-box-heading h3 {
+    position: relative;
+    color: #fff;
+    font-family: Manrope;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 3rem;
+    letter-spacing: -0.096rem;
+    width: 15.1rem;
+}
+
+.info-box-heading h3::before {
+    position: absolute;
+    content: "";
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(103deg, #AE67FA -13.86%, #F49867 99.55%), #FFF;
+    width: 38px;
+    height: 3px;
+    top: -1rem;
+    left: 0;
+}
+
+.info-box-description {
+    align-self: flex-end;
+}
+
+.info-box-description p {
+    color: #81AFDD;
+    font-family: Manrope;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3rem; /* 187.5% */
+}
+
+.info-heading-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-heading-box h2{
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 3.4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 4.5rem; /* 132.353% */
+    background: linear-gradient(90deg, #AE67FA 1.84%, #F49867 102.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 47.2rem;
+}
+
+.info-heading-box p {
+    color: #FF8A71;
+    font-family: Manrope;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3rem; /* 187.5% */
+    cursor: pointer;
+}
+
+.info-box-cols {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.col p {
+    color: #81AFDD;
+    font-family: Manrope;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3rem; /* 187.5% */
+    max-width: 33.4rem;
+    }
+
+/* chatGpt-info STYLES END */
+
+/* OPTIONS STYLES START */
+
+.options-section {
+    margin-left: 13.5rem;
+    margin-right: 13.5rem;
+    margin-bottom: 4.5rem;
+}
+
+.options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 13.8rem;
+    
+}
+
+.option-left-col h2{
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 3.4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 4.5rem; /* 132.353% */
+    background: linear-gradient(90deg, #AE67FA 1.84%, #F49867 102.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    max-width: 42.6rem;
+    padding-bottom: 3.4rem;
+}
+
+.option-left-col a {
+    color: #FF8A71;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 187.5% */
+    text-decoration: none;
+}
+
+.option-right-col {
+    display: flex;
+    flex-direction: row;
+    gap: 7.4rem;
+    max-width: 60rem;
+}
+
+.right-col-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5.7rem;
+}
+
+.info-box-heading .option-heading {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 2.4rem; /* 133.333% */
+    letter-spacing: -0.72px;
+}
+
+.right-col-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.right-col-2 p {
+    color: #81AFDD;
+    font-family: Manrope;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.4rem; /* 171.429% */
+}
+
+
+/* OPTIONS STYLES END */
