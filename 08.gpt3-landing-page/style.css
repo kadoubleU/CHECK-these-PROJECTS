@@ -11,6 +11,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -139,6 +140,7 @@ header::after {
     display: flex;
     flex-direction: column;
     gap: 3.3rem;
+
 }
 
 .header-left-content h2 {
@@ -152,7 +154,21 @@ header::after {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-size: 200%;
+    animation: gradient-text-animation 3s alternate infinite;
 }
+
+@keyframes gradient-text-animation {
+    from {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    to {
+      background-position: 0 50%;
+    }
+  }  
 
 .header-description {
     color: #81AFDD;
@@ -166,6 +182,7 @@ header::after {
 form {
     display: flex;
     align-items: center;
+
 }
 
 input {
@@ -175,7 +192,7 @@ input {
     border-radius: 0.5rem 0rem 0rem 0.5rem;
     background: #052D56;
     border: none;
-    min-width: 45.6rem;
+    width: 100%;
     color: #3D6184;
     font-family: Manrope;
     font-size: 2rem;
@@ -195,7 +212,7 @@ input {
 
 .subscribe-btn {
     border-radius: 0rem 0.5rem 0.5rem 0rem;
-    min-width: 17.4rem;
+    max-width: 17.4rem;
     background: #FF4820;
     color: #FFF;
     font-family: Manrope;
@@ -206,6 +223,7 @@ input {
     padding: 2.13rem 2.6rem;
     cursor: pointer;
     border: none;
+    text-wrap: nowrap;
 }
 
 .subscribe-btn:hover {
@@ -252,12 +270,14 @@ input {
     margin-left: 1.3rem;
 }
 
-.header-right-image {
-    max-width: 50%;
-}
+/* .header-right-image {
 
-.header-right-image img {
-   min-width: 100%;
+} */
+
+.header-right-image {
+    width: 100%;
+    height: auto;
+    
 }
 
 /* HEADER STYLES END */
@@ -398,6 +418,10 @@ input {
     cursor: pointer;
 }
 
+.info-heading-box p:hover {
+    color: #AE67FA;
+}
+
 .info-box-cols {
     display: flex;
     flex-direction: row;
@@ -458,6 +482,10 @@ input {
     text-decoration: none;
 }
 
+.option-left-col a:hover {
+    color: #AE67FA;
+}
+
 .option-right-col {
     display: flex;
     flex-direction: row;
@@ -498,3 +526,280 @@ input {
 
 
 /* OPTIONS STYLES END */
+
+/* MY APPS SECTION STYLES START */
+
+.my-apps {
+    margin-top: 7.7rem;
+    margin-left: 17.7rem;
+    margin-bottom: 14.5rem;
+    margin-right: 21.9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.9rem;
+
+}
+
+.my-apps-left-col img {
+    max-width: 100%;
+}
+
+.my-apps-right-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+    justify-content: center;
+    padding-top: 20rem;
+}
+
+.my-apps-top-link a {
+    color: #71E5FF;
+    font-family: Manrope;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3rem; /* 187.5% */
+    text-decoration: none;
+
+}
+
+.my-apps-top-link a:hover {
+    color: #F49867;
+}
+
+.my-apps-right-col h3 {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 45px; /* 132.353% */
+    background: linear-gradient(173deg, #AE67FA -13.86%, #F49867 99.55%), #FFF;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.my-apps-paragraph {
+    color: #81AFDD;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 187.5% */
+    max-width: 47.9rem;
+}
+
+.my-apps-bottom-link a {
+    color: #FF8A71;
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 187.5% */
+    text-decoration: none;
+}
+
+.my-apps-bottom-link a:hover {
+    color: #71E5FF;
+}
+
+/* MY APPS SECTION STYLES END */
+
+
+/* CTA SECTION STYLES START */
+
+.cta {
+    margin-left: 13.5rem;
+    margin-right: 13.5rem;
+    margin-bottom: 15.4rem;
+    padding: 4.6rem;
+    border-radius: 1.7rem;
+    background: linear-gradient(90deg, #AE67FA 1.84%, #F49867 102.67%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-link {
+    color: #0E0E0E;
+    font-family: Manrope;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3rem; /* 250% */
+    text-decoration: none;
+}
+
+.cta-text h3 {
+    color: #000;
+    font-family: Manrope;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 4.5rem; /* 187.5% */
+}
+
+.cta-button {
+    display: inline-block;
+    border-radius: 4rem;
+    background: #000;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem; /* 166.667% */
+    text-decoration: none;
+    padding: 1.2rem 4.5rem;
+    text-wrap: nowrap;
+}
+
+.cta-button:hover {
+    background: #fff;
+    color: #000;
+    border: 0.2rem solid #000;
+}
+
+/* CTA SECTION STYLES END */
+
+/* BLOGGING SECTION STYLES START */
+.blogging-section {
+   margin-left: 13.5rem;
+   margin-right: 13.5rem;
+   margin-bottom: 15.4rem;
+}
+
+.blogger-container-heading {
+    font-family: Manrope;
+    font-size: 6.2rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 7.5rem; /* 120.968% */
+    letter-spacing: -0.248rem;
+    background: linear-gradient(90deg, #AE67FA 1.84%, #F49867 102.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 11.5rem;
+}
+
+.blog-container-content {
+    display: flex;
+    gap: 5rem;
+}
+
+.blog-left-col {
+    background: #042C54;
+    object-fit: cover;
+    max-width: fit-content;
+    padding-bottom: 2.5rem;
+
+}
+
+.blog-left-post-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 19rem;
+}
+
+.post-header {
+    padding-left: 2.5rem;
+}
+
+.post-header p {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.2 rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.5rem; /* 300% */
+    padding-top: 3.2rem;
+}
+
+.post-header h3 {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 2.51rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 3.29rem; /* 120.619% */
+}
+
+.read-more-btn {
+    display: inline-block;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.5rem; /* 300% */
+    text-decoration: none;
+    padding-left: 2.5rem;
+}
+
+.blog-right-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4.8rem;
+}
+
+.post {
+    background: #042C54;
+    
+}
+
+.blog-right-post-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    gap: 2rem;
+    padding-left: 2.5rem;
+    padding-top: 0.9rem;
+    padding-bottom: 1.3rem;
+}
+
+.post-header-small p {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3.5rem; /* 300% */
+}
+
+.post-header-small h3 {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.93rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 3.03rem; /* 156.804% */
+}
+
+.read-more-btn-small {
+    display: inline-block;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 11.649px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34.947px; /* 300% */
+    text-decoration: none;
+    padding-top: 1.2rem;
+}
+
+/* BLOGGING SECTION STYLES END */
+
+/* FOOTER STYLES START */
+
+footer {
+    background: #031B34;
+}
+
+/* FOOTER STYLES END */
