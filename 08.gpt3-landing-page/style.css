@@ -671,6 +671,9 @@ input {
    margin-left: 13.5rem;
    margin-right: 13.5rem;
    margin-bottom: 15.4rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .blogger-container-heading {
@@ -800,6 +803,159 @@ input {
 
 footer {
     background: #031B34;
+    position: relative;
+    z-index: 2;
 }
 
+.footer {
+    padding-top: 17.5rem;
+    padding-bottom: 2.7rem;
+}
+
+.footer-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-heading h2 {
+    text-align: center;
+    font-family: Manrope;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 75px; /* 120.968% */
+    letter-spacing: -2.48px;
+    background: linear-gradient(90deg, #AE67FA 1.84%, #F49867 102.67%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 6.4rem;
+    max-width: 82.1rem;
+}
+
+.footer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-btn a {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: 1px solid #FFF;
+    padding: 2.2rem 2.4rem;
+    text-decoration: none;
+}
+
+.footer-btn a:hover {
+    border-image: linear-gradient(#AE67FA, #F49867) 30;
+}
+
+.footer-content {
+    margin-top: 18.5rem;
+    margin-left: 20.5rem;
+    margin-right: 20.5rem;
+    padding-bottom: 8.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.col-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.footer-address {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-links-heading {
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 3.6rem;
+}
+
+.footer-col ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 2.6rem;
+}
+
+.footer-col ul a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer-col ul a:hover {
+    color: #F49867;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2.7rem;
+}
+
+.copyright p {
+    color: #FFF;
+    font-feature-settings: 'liga' off;
+    font-family: Manrope;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
 /* FOOTER STYLES END */
+
+/* RESPONSIVE LAYOUT START */
+
+@media only screen and (max-width: 155rem) {
+    .header-left-content h2 {
+        font-size: 6rem;
+    }
+
+    .header-right-image {
+        min-width: 50.4rem;
+        height: auto;
+    }
+
+}
+
+@media only screen and (max-width: 143rem) {
+    .header-left-content h2 {
+        font-size: 6rem;
+    }
+
+    .header-right-image {
+        min-width: 50.4rem;
+        height: auto;
+    }
+
+    
+
+}
+
+
+/* RESPONSIVE LAYOUT END */
