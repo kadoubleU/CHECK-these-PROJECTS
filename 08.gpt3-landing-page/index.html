@@ -6,7 +6,7 @@
     <title>GPT-3 Landing Page</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <header>
@@ -20,6 +20,16 @@
                         <path d="M42.0974 11.006V7.83799H50.4574V11.006H42.0974Z" fill="white"/>
                         <path d="M59.9394 6.84799C60.922 7.18533 61.714 7.73533 62.3154 8.49799C62.9167 9.24599 63.2174 10.1333 63.2174 11.16C63.2174 12.7733 62.6747 14.0347 61.5894 14.944C60.504 15.8533 59.1767 16.308 57.6074 16.308C56.39 16.308 55.2974 16.0293 54.3294 15.472C53.376 14.9147 52.672 14.0933 52.2174 13.008L55.2534 11.248C55.6347 12.3333 56.4194 12.876 57.6074 12.876C58.2967 12.876 58.8174 12.7147 59.1694 12.392C59.5214 12.0693 59.6974 11.6587 59.6974 11.16C59.6974 10.6613 59.5214 10.2507 59.1694 9.92799C58.8174 9.60533 58.2967 9.44399 57.6074 9.44399H56.8814L55.5394 7.44199L58.3334 3.89999H52.7014V0.599992H62.6014V3.45999L59.9394 6.84799Z" fill="white"/>
                       </svg></a>
+                </div>
+                <p class="menu-toggle-btn">MENU</p>
+                <div class="mobile-nav">
+                    <ul class="header-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#what-is-gpt3">What is GPT?</a></li>
+                        <li><a href="#open-ai">Open AI</a></li>
+                        <li><a href="#case-studies">Case Studies</a></li>
+                        <li><a href="#">Library</a></li>
+                    </ul>
                 </div>
                 <div class="header-navigation">
                     <ul class="header-nav">
@@ -297,5 +307,19 @@
     <script>
       AOS.init();
     </script>
+
+    <!-- MOBILE NAV -->
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function() {
+           $(".mobile-nav").css("display", "none");
+       })
+       $(".menu-toggle-btn").click(function() {
+           $(this).toggleClass("fa-times");
+           $(".mobile-nav").slideToggle();
+       });
+   </script>
 </body>
 </html>

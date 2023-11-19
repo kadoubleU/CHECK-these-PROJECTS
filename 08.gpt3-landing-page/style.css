@@ -931,22 +931,6 @@ footer {
 
 /* RESPONSIVE LAYOUT START */
 
-@media only screen and (max-width: 155rem) {
-    .header-left-content h2 {
-        font-size: 6rem;
-    }
-
-    .header-right-image {
-        min-width: 50.4rem;
-        height: auto;
-    }
-
-}
-
-@media only screen and (max-width: 143rem) {
-   
-
-}
 
 
 /* RESPONSIVE LAYOUT END */
